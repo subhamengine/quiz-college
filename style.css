@@ -1,52 +1,106 @@
-body{
-    border: none;
-    margin: none;
-    display: flex;
-    align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: none;
+  margin: none;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: row;
+  background-color: beige;
+}
+.main-body {
+  width: 300px;
+  height: 200px;
+  background-color: burlywood;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 250px;
+  border-radius: 10px;
+  position: relative;
+}
+p {
+  font-size: large;
+}
+.sub {
+  width: 70px;
+  height: 20px;
+  border: 2px solid black;
+  text-align: center;
+}
+.sub:hover {
+  cursor: pointer;
+  background-color: wheat;
+}
+.result {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  border: 1px solid brown;
+  padding: 2px;
+}
+.non-display {
+  display: none;
+}
+
+.result:hover {
+  cursor: pointer;
+  background-color: wheat;
+}
+
+#scoreboard {
+  position: absolute;
+  right: 15ch;
+  height: 60ch;
+  overflow-y: scroll;
+  background-color: rgb(165, 203, 230);
+  padding: 1ch 5ch;
+  margin-top: 10ch;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+    .attribution{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+/* 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th,
+td {
+  padding: 10px 20px;
+  border: 1px solid #000;
+} */
+
+@media screen and (max-width: 900px) {
+  body {
+    flex-direction: column;
     justify-content: center;
-    flex-direction: column;
-    background-color:beige;
-}
-.main-body{
-    width: 300px;
-    height: 200px;
-    background-color: burlywood;
-    display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    margin-top: 250px;
-    border-radius: 10px;
+  }
+  .main-body {
     position: relative;
-}
-p{
-    font-size: large;
-}
-.sub{
-    width: 70px;
-    height: 20px;
-    border: 2px solid black;
-    text-align: center;
-}
-.sub:hover{
-    cursor: pointer;
-    background-color: wheat
-}
-.result{
-    position: absolute;
-    bottom: 10px;
-    right: 30px;
-    border: 1px solid brown;
-    padding: 2px;
-}
-.non-display{
-    display: none;
-}
-.attribution{
-    position: absolute;
-    bottom: 5px;
-}
-.result:hover{
-    cursor: pointer;
-    background-color: wheat
+    top: 4ch;
+    margin-top: 0px;
+  }
+
+  #scoreboard {
+      align-self: end;
+    position: relative;
+    margin-top: 10ch;
+    width: 140px;
+    /* padding: 1ch 15ch; */
+  }
 }

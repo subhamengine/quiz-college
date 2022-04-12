@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Quiz</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-body">
-        <p>Enter the Roll number:-</p>
-        <input class="roll" type="number" placeholder="roll">
-        <input class = "batch" type="number" placeholder="batch 1 or 2">
-        <div class="sub" >Submit</div>
-        <div class="result">Result</div>
-        <br>
-        <br>
-        <br>
-        <button onclick="download()">Download Result</button>
-        <br>
+      <p>Enter the Roll number:-</p>
+      <input class="roll" type="number" placeholder="roll" />
+      <input class="batch" type="number" placeholder="batch 1 or 2" />
+      <div class="sub">Submit</div>
+      <div class="result">Result</div>
+      <br />
+      <br />
+      <br />
+      <button onclick="download()">Download Result</button>
+      <br>
+      <button onclick="clearData()">Clear Data</button>
+      <br />
     </div>
+
+    <div id="scoreboard"></div>
+
     <div class="result-box">
-        <p>NIL</p>
+      <p>NIL</p>
     </div>
-    <div class="attribution">
-        Made by Subham Sharma
-    </div>
-</body>
-<script src="script.js"></script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="attribution">Made by Subham Sharma</div>
+  </body>
+  <script src="script.js"></script>
 </html>
