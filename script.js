@@ -8,7 +8,7 @@ const res = document.querySelector(".result");
 var list = localStorage.getItem("list");
 if (!list) {
   var list = new Array(250);
-  for (var i = 0; i < 250; i++) {
+  for (var i = 0; i < list.length; i++) {
     list[i] = 0;
   }
 } else {
@@ -99,7 +99,7 @@ displayscore = () => {
 };
 
 const clearData = () => {
-  for (var i = 0; i < 250; i++) {
+  for (var i = 0; i < list.length; i++) {
     list[i] = 0;
   }
   localStorage.setItem("list", list);
