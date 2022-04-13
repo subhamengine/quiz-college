@@ -1,5 +1,5 @@
 const resultBox = document.querySelector(".result-box");
-resultBox.classList.add("non-display");
+
 var submit = document.querySelector(".sub");
 
 var roll = document.querySelector(".roll");
@@ -63,7 +63,8 @@ displayscore = () => {
   if (prevtable) {
     prevtable.remove();
   }
-
+  //batch update
+  resultBox.innerHTML = "Batch1:- "+batch1+"\n"+"Batch2:- "+batch2;
   let table = document.createElement("table");
   let thead = document.createElement("thead");
   let tbody = document.createElement("tbody");
@@ -99,6 +100,8 @@ displayscore = () => {
 };
 
 const clearData = () => {
+  batch1 = 0;
+  batch2 = 0;
   for (var i = 0; i < list.length; i++) {
     list[i] = 0;
   }
